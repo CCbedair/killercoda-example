@@ -25,8 +25,8 @@ git clone https://github.com/madhuakula/kubernetes-goat.git
 kubectl apply -f kubernetes-goat/scenarios/$APP_NAME/deployment.yaml
 
 # Apply extra infra
-helm install metadata-db scenarios/metadata-db/
-kubectl patch $APP_NAME-deployment --type json -p='[{"op": "replace", "path": "/spec/template/spec/containers/0/resources/limits/memory", "value":"500Mi"}]'
+helm install metadata-db kubernetes-goat/scenarios/metadata-db/
+kubectl patch deployment $APP_NAME-deployment --type json -p='[{"op": "replace", "path": "/spec/template/spec/containers/0/resources/limits/memory", "value":"500Mi"}]'
 rm -rf kubernetes-goat
 
 sleep 30
