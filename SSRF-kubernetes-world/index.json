@@ -20,27 +20,10 @@
       {
         "title": "⚡️ The goal",
         "text": "step3.md"
-      },
-      {
-        "title": "⚡️ The hints",
-        "text": "step4.md"
-      },
-      {
-        "title": "⚡️ The walkthrough",
-        "text": "step5.md"
-      },
-      {
-        "title": "⚡️ The walkthrough 2",
-        "text": "step6.md"
-      },
-      {
-        "title": "⚡️ The End",
-        "text": "step7.md",
-        "verify": "verify.sh"
       }
     ],
     "finish": {
-      "text": "finish.md"
+      "text": "finish.md",
     }
   },
   "backend": {
