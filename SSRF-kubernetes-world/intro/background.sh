@@ -29,7 +29,7 @@ helm install metadata-db kubernetes-goat/scenarios/metadata-db/
 kubectl patch deployment $APP_NAME-deployment --type json -p='[{"op": "replace", "path": "/spec/template/spec/containers/0/resources/limits/memory", "value":"500Mi"}]'
 rm -rf kubernetes-goat
 
-sleep 30
+sleep 10
 
 cat <<EOF > expose-service.sh
 #!/bin/bash

