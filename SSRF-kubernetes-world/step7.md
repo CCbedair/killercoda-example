@@ -6,6 +6,6 @@ It's time to validate your solution to the challenge.
 For that assign the flag answer to `SOLUTION` variable:
 
 ```
-export SOLUTION=<flag>
+echo -n <flag> > solution.txt
 ```
 Then press `CHECK`!
