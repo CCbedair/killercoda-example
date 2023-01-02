@@ -2,8 +2,9 @@
 
 By the end of the scenario, we will understand and learn the following
 
-1. You will learn to test and exploit the container UNIX socket misconfigurations
-2. Able to exploit container and escape out of the docker container
-3. Learn common misconfigurations in pipelines and CI/CD build systems
+1. How to exploit SSRF vulnerabilities in applications in cloud environments
+2. Learn to understand the metadata query features to gain access to cloud provider data
+3. Understand and leverage Kubernetes native service discovery features and service DNS queries
+4. Gain access to internal microservices within-cluster environments
 
 Please wait till setup is completed
