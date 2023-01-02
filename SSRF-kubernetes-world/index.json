@@ -14,12 +14,16 @@
         "text": "step1.md"
       },
       {
-        "title": "⚡️ The goal",
+        "title": "⚡️ The page",
         "text": "step2.md"
       },
       {
-        "title": "⚡️ The hints",
+        "title": "⚡️ The goal",
         "text": "step3.md"
+      },
+      {
+        "title": "⚡️ The hints",
+        "text": "step4.md"
       }
     ],
     "finish": {
